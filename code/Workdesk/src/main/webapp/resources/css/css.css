@@ -1,0 +1,14 @@
+DIV,UL {
+	padding: 0px;
+}
+
+.rf-ac-itm-cnt {
+	padding: 0px;
+	padding-bottom: 15px;
+	padding-top: 5px;
+}
+
+.rf-ac-itm-hdr{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
