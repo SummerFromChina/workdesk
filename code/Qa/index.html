@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Q A</title>
+		<link href="css/css.css" rel="stylesheet" type="text/css">
+		<link href="css/themes/gray/easyui.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/flexigrid.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/editor/themes/default/default.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/editor/plugins/code/prettify.css" />
+		<script type="text/javascript" src="js/lib/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/utils.js"></script>
+		<script type="text/javascript" src="js/lib/flexigrid.js"></script>
+		<script type="text/javascript" src="js/lib/GB2312Encode.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.parser.js"></script>
+	</head>
+
+	<body>
+		<div id="app_bg" class="bg"></div>
+		<div id="app_win" class="win">
+			<div id="app_title">
+				<div id="app_btn">
+					<div id="app_close_btn"></div>
+					<div id="app_max_btn" class="app_unmax_btn"></div>
+					<div id="app_min_btn"></div>
+				</div>
+				<div id="user_img">
+					<img width="38" height="38" alt="">
+				</div>
+				<div id="user_info">
+					<span id="user_name">登陆</span>
+					<br />
+					<span id="user_msg">创建新账户</span>
+				</div>
+				<div id="app_set">
+					<span>设置</span> &nbsp;|&nbsp; <span>帮助</span>
+				</div>
+			</div><!-- end app title -->
+			<div id="app_menu">
+				<div class="menu_left">
+					&nbsp;
+				</div>
+				<div id="menu">
+					<div id="main_menu">
+						<span id="menu_index" data-index="0">首页</span> &nbsp; <span id="menu_question" data-index="1">问答区</span>
+					</div>
+					<div id="sub_menu">
+						<span>活跃</span> &nbsp; <span>最新提问</span> &nbsp; <span>尚未回答</span>
+					</div>
+				</div>
+				<div id="app_back"></div>
+				<div id="app_search">
+					<input />
+					<button></button>
+				</div>
+			</div><!-- end app menu -->
+			<div id="app_content">
+				<div id="content_main">
+					<div id="ques_left">
+						<div id="ques_left_title">
+							<span>我的提问</span>
+							<div id="btn_ask_save" class="btn_ask">
+								保存提问
+							</div>
+							<div id="btn_ask_commit" class="btn_ask">
+								提交提问
+							</div>
+						</div><div id="ques_new">
+							<div id="ques_title_div">
+								<span>标  题：</span>
+								<input type="text" class="tips_title" />
+							</div>
+							<div id="ques_tips_div">
+								<span>标  签：</span>
+								<input type="text" class="tips_input" />
+								<input type="text" class="tips_input" />
+								<input type="text" class="tips_input" />
+								<input type="text" class="tips_input" />
+								<input type="text" class="tips_input" />
+								<div class="ques_new_tip">准确的关联开源软件，可让更多专家看到这个问题（最多5个）输入软件名首字，例如 Ubuntu 的 u 字，将会出现软件列表</div>
+							</div>
+							<div id="ques_new_fck"><textarea name="content" style="width:100%;height:100%;"></textarea></div>
+						</div>
+					</div>
+					<div id="ques_right">
+						<div id="ques_tips_hot">
+							<span>我的标签</span>
+						</div><div id="tips_hot"></div>
+					</div>
+				</div>
+			</div><!-- end app content -->
+			<div id="app_foot"></div><!-- end app foot -->
+		</div><!-- end app win -->
+
+		<div class="login_gray"></div>
+		<div class="login_div">
+			<div id="login_div_head">
+				<div id="login_back"></div>
+			</div>
+			<div id="login_div_form">
+				<p class="title">Login</p>
+				<p><input type="text" /></p>
+				<p><input type="text" /></p>
+				<p><button>LOG IN</button> <button>CANCEL</button></p>
+				<p><input type="checkbox" value="" />记住我的密码</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/cfg.js"></script>
+	<script type="text/javascript" src="js/lib/editor/kindeditor-min.js"></script>
+	<script type="text/javascript" src="js/lib/editor/lang/zh_CN.js"></script>
+	<script type="text/javascript" src="js/lib/editor/plugins/code/code.js"></script>
+	<script type="text/javascript" src="js/lib/editor/plugins/code/prettify.js"></script>
+	<script type="text/javascript" src="js/artTemlate/template.min.js"></script>
+	<script type="text/javascript" src="js/templates.js"></script>
+	<script type="text/javascript" src="js/lib/idlemonitor.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.timers-1.1.3.js"></script>
+	<script type="text/javascript" src="js/lib/uuid.js"></script>
+	<script type="text/javascript" src="js/lib/sqlite.js"></script>
+	<script type="text/javascript" src="js/SQL.js"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/question.js"></script>
+</html>

@@ -1,0 +1,552 @@
+body {
+	font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
+	font-size: 12px;
+	margin: 0;
+	overflow: hidden;
+}
+
+.bg {
+	z-index: -1;
+	width: 100%;
+	overflow: hidden;
+	background-color: #FCFAF9;
+}
+
+.win {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	z-index: 1;
+}
+
+#app_title {
+	width: 100%;
+}
+
+#app_btn {
+	float: right;
+}
+
+#app_min_btn {
+	margin-top: 5px;
+	background: url(../images/win_tools.gif) no-repeat 0px 0px;
+	height: 16px;
+	width: 16px;
+	float: right;
+	margin-right: 5px;
+}
+
+.app_unmax_btn {
+	float: right;
+	margin-top: 5px;
+	background: url(../images/win_tools.gif) no-repeat -16px -16px;
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+}
+
+.app_max_btn {
+	float: right;
+	margin-top: 5px;
+	background: url(../images/win_tools.gif) no-repeat 0px -16px;
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+}
+
+#app_close_btn {
+	float: right;
+	margin-top: 5px;
+	background: url(../images/win_tools.gif) no-repeat -16px 0px;
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+}
+
+#user_img {
+	float: right;
+	width: 70px;
+	margin-left: 5px;
+}
+
+#user_info {
+	float: right;
+}
+
+#user_info span {
+	float: right;
+}
+
+#user_info #user_name {
+	font-weight: bolder;
+	margin-top: 3px;
+}
+
+#user_info #user_name:hover {
+	color: #D5D5D5;
+}
+
+#user_info #user_msg {
+	color: #C6C0C0;
+	font-size: 11px;
+}
+
+#user_info #user_msg:hover {
+	color: #000000;
+}
+
+#app_set {
+	float: right;
+	width: 200px;
+	margin-top: 8px;
+	color: #D5D5D5;
+}
+
+#app_set span:hover {
+	color: #000000;
+}
+
+#app_menu {
+	width: 100%;
+	height: 60px;
+}
+
+.menu_left {
+	width: 15px;
+	height: 100%;
+	background-image: url('../images/menu_left.jpg');
+	background-repeat: repeat-x;
+	float: left;
+}
+
+#menu {
+	width: 500px;
+	height: 100%;
+	margin-left: 40px;
+	float: left;
+}
+#main_menu {
+	width: 100%;
+	height: 35px;
+}
+#main_menu span {
+	height: 35px;
+	font-size: 26px;
+	color: #ABA5A5;
+}
+
+#menu span:hover {
+	color: #766868;
+}
+
+.active {
+	color: #000000;
+}
+
+#sub_menu {
+	width: 100%;
+	height: 25px;
+}
+#sub_menu span {
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+	color: #ABA5A5;
+}
+
+#app_search {
+	width: 250px;
+	float: right;
+}
+
+input,select{
+	background-color: #FFFFFF;
+	border: 1px solid #ABA5A5;
+	border-radius: 3px;
+}
+#app_search input {
+	height: 20px;
+	margin-top: 15px;
+	width: 220px;
+	float: left;
+}
+
+#app_search input:active {
+}
+
+#app_search button {
+	float: left;
+	width: 22px;
+	height: 22px;
+	background-color: #FFFFFF;
+	margin-top: 15px;
+	border: 0px;
+}
+
+#app_back {
+	float: right;
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/back.png');
+	right: 0px;
+	margin-right: 40px;
+}
+
+#app_back:hover {
+	background-image: url('../images/back_hover.png');
+}
+
+#app_content {
+	position: absolute;
+	top: 112px;
+	table-layout: fixed;
+	width: 100%;
+	clear: both;
+}
+
+#app_foot {
+	position: absolute;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
+	background-color: #888888;
+}
+
+#content_main {
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	right: 20px;
+	bottom: 5px;
+}
+
+#content_main_left {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+#content_main_center {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+#content_main_right {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+#app_news {
+	width: 95%;
+	height: auto;
+}
+
+#app_share {
+	width: 95%;
+	height: auto;
+}
+
+#app_question {
+	width: 95%;
+	height: auto;
+}
+
+#app_news .news {
+	padding-left: 6px;
+	background-color: #2D89EF;
+	width: 100%;
+	margin-top: 5px;
+	padding-right: 2px;
+	color: #FFFFFF;
+}
+
+#app_share .news {
+	background-color: #CC9933;
+	margin-top: 5px;
+	width: 100%;
+	padding-left: 6px;
+	padding-right: 2px;
+	color: #FFFFFF;
+}
+ul {
+	-webkit-padding-start: 0px;
+}
+#app_news ul li:hover {
+	background-color: #3F3F3F;
+}
+#app_share ul li:hover {
+	background-color: #3F3F3F;
+}
+#app_question ul li:hover {
+	background-color: #3F3F3F;
+}
+
+.news .title {
+	width: 100%;
+	padding-top: 2px;
+}
+.news .title p {
+	width: 100%;
+	margin: 5px;
+}
+.news .tips {
+	width: 100%;
+	height: 20px;
+}
+
+.news .tips .tip {
+	float: right;
+	margin-right: 6px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #FFFFFF;
+}
+
+.news .tips .news_time {
+	float: left;
+	margin-left: 6px;
+	color: #FFFFFF;
+}
+
+#app_question .news {
+	background-color: #B91D47;
+	margin-top: 5px;
+	width: 100%;
+	padding-left: 6px;
+	padding-right: 2px;
+	color: #FFFFFF;
+}
+
+/**
+ * 	问答区   相关 CSS
+ */
+
+#ques_left {
+	float: left;
+	width: 73%;
+	height: 100%;
+}
+
+#ques_right {
+	float: right;
+	width: 24%;
+	height: 100%;
+}
+
+#ques_left_title {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #000000;
+}
+#ques_left_title span {
+	line-height: 30px;
+	font-size: 20px;
+	float: left;
+}
+
+#ques_left_title .btn_ask {
+	float: right;
+	margin-right: 30px;
+	height: 28px;
+	width: 80px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 28px;
+	color: #FFFFFF;
+	font-size: 16px;
+	background-color: #CD4900;
+}
+#ques_left_title .btn_ask:hover {
+	background-color: #3F3F3F;
+}
+.ques {
+	background-color: #CC9933;
+	margin-top: 5px;
+	width: 96%;
+	padding-left: 6px;
+	padding-right: 2px;
+	color: #FFFFFF;
+	margin-left: 5px;
+}
+
+.ques:hover{
+	background-color: #3F3F3F;
+}
+
+.ques_title {
+	width: 100%;
+	padding-top: 2px;
+	height: 30px;
+}
+
+.ques_title span {
+	line-height: 30px;
+	font-size: 16px;
+}
+
+.ques_title .ques_answer_num {
+	float: right;
+	margin-right: 20px;
+	width: 30px;
+	background-color: #CC2222;
+	text-align: center;
+}
+
+.ques_info {
+	width: 100%;
+	height: 20px;
+}
+
+.ques_info .tips {
+	float: left;
+}
+
+.ques_info .tips .tip {
+	float: left;
+	margin-left: 6px;
+	background-color: #B91D47;
+}
+
+.ques_info .tips .tip span {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.ques_info span {
+	float: right;
+	margin-right: 20px;
+}
+
+#tips_hot {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.ques_tip {
+	background-color: #316AC5;
+	float: left;
+	margin: 5px;
+	padding: 4px;
+	color: #FFFFFF;
+}
+
+#ques_tips_hot {
+	width: 100%;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #000000;
+}
+
+#ques_tips_hot span {
+	line-height: 30px;
+	font-size: 20px;
+}
+
+#ques_tips_me {
+	width: 100%;
+	margin-top: 5px;
+}
+
+#ques_tips_me span {
+	line-height: 30px;
+	font-size: 20px;
+}
+
+/**
+ * 	新增提问CSS
+ */
+
+#ques_title_div{
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+#ques_title_div span{
+	font-size: 15px;
+}
+
+#ques_title_div input{
+	height: 20px;
+	width: 600px;
+}
+
+#ques_tips_div{
+	line-height: 30px;
+}
+
+#ques_tips_div span{
+	font-size: 15px;
+}
+
+#ques_tips_div input{
+	height: 20px;
+	width: 100px;
+}
+
+#ques_tips_div .ques_new_tip{
+	margin-left: 40px;
+	color: #05B2D2;
+}
+
+/**
+ * 	登录 DIV
+ */
+.login_gray{
+	z-index: 9999;
+	background-color: #FFFFFF;
+	opacity: 0.8;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+.login_div{
+	z-index: 10000;
+	background-color: #333333;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 82%;
+}
+
+#login_div_form{
+	color: #FFFFFF;
+	margin-left: 50px;
+}
+
+#login_div_form .title{
+	font-size: 22px;
+}
+#login_div_head{
+	width: 100%;
+	height: 30px;
+}
+
+#login_div_form input[type="text"]{
+	background-color: #666666;
+	border-radius: 0px;
+	height: 22px;
+	width: 300px;
+	color: #FAFAFA;
+}
+
+#login_div_form button{
+	background-color: #666666;
+	border-radius: 0px;
+	height: 30px;
+	width: 100px;
+	border: 0px;
+	color: #FAFAFA;
+}
+
+
+
