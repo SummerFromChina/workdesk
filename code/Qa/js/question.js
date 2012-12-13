@@ -20,6 +20,10 @@ question.html = (function() {
 			question.html.showHotTips();
 		},
 
+		eventBind : function() {
+			question.add.showQuesAddEvent(btn_ask);
+		},
+
 		// 问题列表
 		showQuesList : function() {
 			var news = {
@@ -51,6 +55,8 @@ question.html = (function() {
 question.add = (function() {
 	return {
 		html : function() {
+			Qa.win.cleanContent();
+			$(app_content).append(Templates.question_add_html.join(""));
 			question.add.fckShow();
 		},
 
@@ -61,6 +67,10 @@ question.add = (function() {
 			var all_h = $(ques_left).height();
 			KEditor.cfg.height = all_h - 145;
 			question.editor = KindEditor.create('textarea[name="content"]', KEditor.cfg);
+		},
+
+		showQuesAddEvent : function(id) {
+			$(id).bind("click", question.add.html);
 		}
 	};
 })();
@@ -68,6 +78,7 @@ question.add = (function() {
 question.events = (function() {
 	return {
 		bind : function() {
+			question.html.eventBind();
 		},
 	};
 })();

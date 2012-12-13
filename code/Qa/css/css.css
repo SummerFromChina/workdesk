@@ -528,7 +528,16 @@ ul {
 }
 #login_div_head{
 	width: 100%;
-	height: 30px;
+	height: 50px;
+}
+
+#login_div_head #login_back{
+	float: right;
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/back.png');
+	right: 0px;
+	margin-right: 40px;
 }
 
 #login_div_form input[type="text"]{

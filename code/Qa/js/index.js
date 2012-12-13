@@ -77,6 +77,7 @@ index.events = (function() {
 	return {
 		bind : function() {
 			index.events.menuBind();
+			index.events.appsEvent();
 		},
 		menuBind : function() {
 			$(main_menu).find('span').each(function() {
@@ -99,14 +100,22 @@ index.events = (function() {
 			});
 			$(menu_index).bind('click', function() {
 				$(app_content).empty();
-				index.html.showHtml();
+				index.init();
 				index.menu_active = $(this).data('index');
 			});
 			
 			$(menu_question).bind('click', function() {
 				$(app_content).empty();
+				question.init();
 				var option = JSON.parse($(this).data('option'));
 				index.menu_active = $(this).data('index');
+			});
+		},
+		
+		appsEvent : function(){
+			$(app_question_title).bind("click",function(){
+				Qa.win.cleanContent();
+				question.init();
 			});
 		}
 	};
