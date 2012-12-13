@@ -95,16 +95,8 @@ Qa.win = (function() {
 	return {
 		init : function() {
 			Qa.win.eventBind();
-			question.add.html();
-
-			$.ajax({
-				type : "post",
-				url : "http://localhost:8080/Workdesk/security/login",
-				data : {
-					"username" : "Feng"
-				},
-				dataType : 'json'
-			});
+			
+			index.init();
 		},
 
 		eventBind : function() {
@@ -116,6 +108,8 @@ Qa.win = (function() {
 			Win.events.drag(app_title);
 			Win.events.max(app_max_btn, 'click');
 			Win.events.min(app_min_btn);
+			
+			Acc.login.showEventBind(acc_login);
 		},
 
 		cleanContent : function() {
